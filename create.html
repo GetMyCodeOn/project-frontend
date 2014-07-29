@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Create</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href ="css/bootstrap.min.css" rel = "stylesheet ">
+  <link href = "css/project.css" rel="stylesheet">
+</head>
+<body>
+  <!--JUMBOTRON-->
+  <div class = "container">
+    <div class = "jumbotron text-center">
+      <p><h1 style = color:DarkGrey>Create Your Project!</h1></p>
+    </div>  
+  </div>
+          <!--COPIED CODE-->
+          <div class="form-group">
+           <label class="col-lg-3 control-label input-sm">Date of Birth:</label>
+           <div class="col-lg-4">
+              <div class="row">
+                 <div class="col-lg-4">
+                  <input type="text" id="txt_month" name="txt_month" class="form-control input-sm"  placeholder="MM" required maxlength="2" data-validation-required-message="Month is required" >
+                 </div>
+                  <div class="col-lg-4">
+                   <input type="text" id="txt_day" name="txt_day" class="form-control input-sm"  placeholder="DD" required maxlength="2" data-validation-required-message="Day is required" >
+                 </div>
+                  <div class="col-lg-4">
+                   <input type="text" id="txt_year" name="txt_year" class="form-control input-sm"  placeholder="YY" required maxlength="4" data-validation-required-message="Year is required" >
+                 </div>
+              </div>
+           <p class="help-block"></p>
+           </div>
+         </div>
+    <!--MORE STOLEN CODE-->
+<div class="container">
+      <div class = "row">
+        <div class = "col-md-6">
+    <textarea placeholder="Project Name" name="comment" class="comment" tabindex="4"></textarea>
+        </div>
+        <div class = "col-md-6">
+    <textarea placeholder="Project Description" name="comment" class="comment" tabindex="4"></textarea><br/>
+        </div>
+      </div>
+</div>
+<div class="container">
+      <div class = "row">
+        <div class = "col-md-4">     
+    <textarea placeholder="Date & Duration" name="comment" class="comment" tabindex="4"></textarea>
+        </div>
+        <div class = "col-md-4"> 
+    <textarea placeholder="Personel Needed" name="comment" class="comment" tabindex="4"></textarea>
+        </div>
+        <div class = "col-md-4"> 
+     <textarea placeholder="Tools Needed" name="comment" class="comment" tabindex="4"></textarea>
+        </div>
+        <div class = "col-md-4"> 
+      </div>
+</div>
+   <!--GRID FOR BUTTON x12-->
+    <div class="container">
+      <div class = "row">
+        <div class = "col-md-12">
+            <!--space for sign-in button-->
+            <button type ="button" class = "btn btn-success">UPLOAD</button>
+        </div>
+      </div>
+    </div>
+</body>
+</html>
