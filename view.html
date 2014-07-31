@@ -3,9 +3,15 @@
 <head>
 	<title>View</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link href = "css/bootstrap.min.css" rel = "stylesheet ">
+	<link href = "css/bootstrap.min.css" rel = "stylesheet">
 	<link href = "css/project.css" rel="stylesheet">
-	
+	<link href = "./data.css" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0-beta.17/angular.min.js">
+	</script>
+	    
+<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+<script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+	<script src="data.js"></script>
 </head>
 <body>
 	<!--JUMBOTRON-->
@@ -44,8 +50,8 @@
 		<!--DUMMY PROJECT-->
 		<div class = "dummy-project">
 			<img  src="http://blogs.edweek.org/teachers/coach_gs_teaching_tips/Teaching%20To%20The%20Test.gif">
-			<h1>This is a Test Project</h1>
-			<span class="symbol glyphicon glyphicon-wrench"></span><p>Supplies Needed</p>
+			<h1 id ="name">This is a Test Project</h1>
+			<span class="symbol glyphicon glyphicon-wrench"></span><p>Supplies Needed:</p>
 			<span class="symbol glyphicon glyphicon-user"></span><p>Personel Needed</p>
 			<span class="symbol glyphicon glyphicon-pushpin"></span><p>Duration of Project</p>
 			<a href = "#"><button class = "btn btn-danger">Find Out More!</button></a>
@@ -151,6 +157,17 @@
 		</div>
 	</div>
 </div>
+<div>
+	<h4 id = "projects"></h4>
+		
+<p id = 'name'> </p>
+
+	
+	
+
+
+</div>
+
 
 </body>
 </html>
