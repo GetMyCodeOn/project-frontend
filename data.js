@@ -1,16 +1,21 @@
 
  $.getJSON("http://arcane-spire-9022.herokuapp.com/projects", function(data) {
- 	var items = [];
- 	
- 	
- 	$.each( data[0], function( key, val){
- 		console.log(data[0].name)
- 		items.push( "<li #" + key + ">" + val + "</li>");
- 	});
- 	$( "<div>", {
- 		
- 		html: items.join("")
- 	}).appendTo( "#projects");
+ 	for(i=0; i<data.length; i++){
+ 		var items = [];	
+ 		$.each( data[i], function( key, val){	
+ 			items.push( "<li #" + key + ">" + val + "</li>");
+ 		});
+ 		$( "<ul>", {	
+ 			html: items.join("")
+ 		}).appendTo( "#projects");
+ 		console.log(data[0].Name)
+ 	}
+ 	/*$.each( data[0].Name, function( key, val){
+ 		items.push("<li #" + key + ">" + val + "</li>");
+ 		$( "<ul>", {	
+ 			html: items.join("")
+ 		}).appendTo( "#name");
+ 	})*/
  });
 
 
@@ -20,10 +25,14 @@ $.ajax({
         url: "http://arcane-spire-9022.herokuapp.com/projects",
         dataType: "json",
 
+for(i=0; i<data.length; i++){
+
         success: function(data) {
-          $.each(data[1], function () {
-          	console.log(data[1])
+          $.each(data[i], function () {
+          	console.log(data[i])
             $( "#projects" ).append
           });
-        }});
+        });
+	}
+}
 });*/

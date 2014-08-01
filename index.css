@@ -1,0 +1,16 @@
+h1 {
+	font-family: arial;
+	font-size: 50px;
+}
+ul {
+	font-family: arial;
+}
+
+ul {
+	border-style: groove;
+
+}
+
+li {
+	list-style-type: none;
+}
